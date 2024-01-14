@@ -6,52 +6,227 @@
     text-decoration: none;
     list-style: none;
     font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --color_primaary:#3A3A3A;
+    --h1_size:2rem;
 }
 
 
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    margin: 4rem auto;
+}
+
+/* Navigation Area */
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav>h1{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1.7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header nav>a{
+    display: none;
+}
+
+header nav .nav_area{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .nav_area .nav_sec{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.7rem;
+}
+
+header nav .nav_area .nav_sec li{   
+    margin: 0 1rem;
+}
+
+header nav .nav_area .nav_sec li a{
+    color: var(--color_primaary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header nav .nav_area .nav_icons{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+/* Banner Area */
+
+.banner_area{
+    margin: 10rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner_area .banner_text{
+    width: 50%;
+}
+
+.banner_area .banner_text>h1{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.banner_area .banner_text p{
+    color: #3A3A3A;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.3rem;
+}
+
+.banner_area .banner_text .btn{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 1.3rem 2rem;
+    border-radius: 15px;
+    color: #FFF;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: #E02C6D;   
+}
+
+.banner_area .banner_text .btn img{
+    margin-bottom: -3px;
+    transition: 0.7s ease;
+    width: 28px;
+}
+
+.banner_area .banner_text .btn:hover img{
+    transform: rotate(180deg);
+}
+
+.banner_area .banner_img{
+    background: url(resources/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    padding: 1.8rem 1.1rem;
+}
+
+.banner_btm{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+}
+
+/* Popular Area */
+
+#popular_area{
+    margin: 2rem auto;
+    width:80%;
+}
+
+#popular_area>h1{
+    text-align: center;
+    color: var(--color_primaary);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+#popular_area .popular_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.3rem;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#popular_area .popular_content .popular_boxs{
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+#popular_area .popular_content .popular_boxs:hover{
+    transform: scale(1.05);
+}
 
 
+#popular_area .popular_content .popular_boxs h3{
+    color: #18191F;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#popular_area .popular_content .popular_boxs h5{
+    color: #070707;
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#popular_area .popular_content .popular_boxs h6{
+    display: flex;
+    font-size: 1rem;
+    width: 40%;
+    margin-bottom: 3px;
+}
+
+#popular_area .popular_content .popular_boxs h6 img{
+    margin-top: -10px;
+}
+
+#popular_area .popular_content .popular_boxs p{
+    color: var(--Gray-50, #787885);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.252px;
+}
 
 
+#popular_area .popular_content .popular_boxs .rating{
+    width: 100%;
+}
 
+#popular_area>h3{
+    display: flex;
+    align-items: center;
+    margin: 3rem 1rem;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+}
 
+#popular_area>h3>img{
+    margin-left: 10px;
+    transition: 1s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#popular_area>h3:hover img{
+    transform: rotate(180deg);
+}
 
 
 

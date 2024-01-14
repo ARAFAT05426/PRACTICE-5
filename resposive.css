@@ -1,0 +1,56 @@
+@media screen and (max-width:576px) {
+    header nav>h1{
+        font-size: 1rem;
+    }
+    header nav{
+        width: 90%;
+        margin: 0 auto;
+    }
+    header nav>a{
+        display: block;
+    }
+    header nav .nav_area .responsive_search{
+        display: none;
+    }
+
+    header .banner_area{
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: 0 auto;
+    }
+    header nav .nav_area .nav_sec{
+        display: none;
+    }
+    .banner_area .banner_img{
+        width: 95%;
+        background-size: cover;
+    }
+    .banner_area .banner_img img{
+        width: 100%;
+    }
+    .banner_area .banner_text{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner_btm{
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+    .banner_btm img{
+        margin: 1rem;
+        width: 15%;
+    }
+    #popular_area{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #popular_area .popular_content{
+        grid-template-columns: 1fr;
+    }
+    #popular_area>h3{
+        margin: 1rem;
+    }
+
+
+}
