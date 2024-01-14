@@ -51,6 +51,23 @@
     #popular_area>h3{
         margin: 1rem;
     }
+    #featured_area{
+        flex-direction: column-reverse;
+    }
+    #featured_area img{
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    #featured_area .featured_text{
+        width: 95%;
+        margin: 1rem auto;
+    }
+    #featured_area .featured_text button{
+        padding: 1rem 2rem;
+    }
+
+
 
 
 }

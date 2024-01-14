@@ -228,16 +228,56 @@ header nav .nav_area .nav_icons{
     transform: rotate(180deg);
 }
 
+/* Featured Area starts here */
 
+#featured_area{
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+#featured_area .featured_text{
+    width: 50%;
+}
 
+#featured_area .featured_text h1{
+    color: #0A0826;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
 
+#featured_area .featured_text p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
 
+#featured_area .featured_text button{
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    border-radius: 5px;
+    background: #E02C6D;
+    color: #070707;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
 
+#featured_area .featured_text button img{
+    margin-left: 1rem;
+    color: #FFF;
+    width: 28px;
+    transition: 1s ease;
+}
 
-
-
-
+#featured_area .featured_text button:hover img{
+    transform: rotate(180deg);
+}
 
 
 
